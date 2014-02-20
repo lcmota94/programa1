@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+
+void main(void)
+{
+    char A[10]={"hola"};
+    char B[15] = {"Mundo"};
+    int x;
+x=strlen(A);
+A[x]=' ';
+printf("La cadena A contiene %s\n",A);
+printf("Posible direccion de A %x\n",&A);
+printf("Posible direccion de B %x\n",&B);
+for(x=0; x<50; x++)
+{
+    putchar(A[x]);
+}
+printf("\nEncontrando a B");
+printf("\nFin del programa\n");
+getch();
